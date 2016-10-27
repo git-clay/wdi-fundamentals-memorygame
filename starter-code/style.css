@@ -40,7 +40,7 @@ footer{
 	display: inline-block;
 }
 
-.card{
+.card, .myImgClass{
 	height: 200px;
 	width: 150px;
 	border: 1px black solid;
