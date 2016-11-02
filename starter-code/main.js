@@ -38,6 +38,7 @@ var isTwoCards = function(){
 		if (cardsInPlay.length ===2){
 			isMatch(cardsInPlay);
 			cardsInPlay = []; //clears cards
+
 		}
 };
 
@@ -46,10 +47,17 @@ var isTwoCards = function(){
 var isMatch = function(cards){
 	if(cards[0]===cards[1]){
 		alert ("BINGO!");
-	}
+		
+
+}
 	else{
 		alert ("Nope. Try again");
+		cardsInPlay =[];
+
 	}
+	for(i=0; i<4; i++){
+		document.getElementsByClassName('card')[i].innerHTML = " ";
+		}
 };
 
 
